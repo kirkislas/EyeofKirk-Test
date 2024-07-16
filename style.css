@@ -1,0 +1,176 @@
+:root {
+  --main-purple: #8408bd; /* Using the color code from your design */
+}
+
+body {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  background-color: black;
+  color: var(--main-purple); /* Use the variable */
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: space-between;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  border-bottom: 1px solid var(--main-purple); /* Use the variable */
+}
+
+.logo .eye {
+  font-size: 24px;
+  font-weight: bold;
+  color: limegreen;
+}
+
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger .bar {
+  width: 25px;
+  height: 3px;
+  background-color: var(--main-purple); /* Use the variable */
+  margin: 4px 0;
+}
+
+#menu {
+  display: none;
+}
+
+#menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+#menu ul li {
+  margin: 10px 0;
+}
+
+#menu ul li a {
+  text-decoration: none;
+  color: var(--main-purple); /* Use the variable */
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+main {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro-text {
+  text-align: center;
+  font-size: 18px;
+  color: var(--main-purple); /* Use the variable */
+  margin-bottom: 20px;
+}
+
+.animated-text-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 150px;
+  overflow: hidden;
+  position: relative;
+}
+
+.animated-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: slide 12s linear infinite;
+}
+
+.text {
+  font-size: 24px;
+  color: limegreen;
+  text-transform: uppercase;
+  margin: 5px 0;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-50%);
+  }
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top: 1px solid var(--main-purple); /* Use the variable */
+  padding: 10px 20px;
+}
+
+.music-player {
+  text-align: center;
+}
+
+.play-button {
+  background-color: var(--main-purple); /* Use the variable */
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+  .logo .eye {
+    font-size: 20px;
+  }
+
+  .intro-text {
+    font-size: 16px;
+  }
+
+  .text {
+    font-size: 20px;
+  }
+
+  .animated-text-wrapper {
+    height: 120px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo .eye {
+    font-size: 18px;
+  }
+
+  .intro-text {
+    font-size: 14px;
+  }
+
+  .text {
+    font-size: 18px;
+  }
+
+  .animated-text-wrapper {
+    height: 100px;
+  }
+
+  .hamburger .bar {
+    width: 20px;
+    height: 2px;
+  }
+}
