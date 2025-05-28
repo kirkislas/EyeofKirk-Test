@@ -1,12 +1,12 @@
 :root {
-  --main-purple: #8408bd; /* Using the color code from your design */
+  --main-purple: #8408bd;
 }
 
 body {
   margin: 0;
   font-family: "Arial", sans-serif;
   background-color: black;
-  color: var(--main-purple); /* Use the variable */
+  color: var(--main-purple);
 }
 
 .container {
@@ -21,7 +21,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  border-bottom: 1px solid var(--main-purple); /* Use the variable */
+  border-bottom: 1px solid var(--main-purple);
 }
 
 .logo .eye {
@@ -39,7 +39,7 @@ header {
 .hamburger .bar {
   width: 25px;
   height: 3px;
-  background-color: var(--main-purple); /* Use the variable */
+  background-color: var(--main-purple);
   margin: 4px 0;
 }
 
@@ -60,7 +60,7 @@ header {
 
 #menu ul li a {
   text-decoration: none;
-  color: var(--main-purple); /* Use the variable */
+  color: var(--main-purple);
   font-size: 18px;
   text-transform: uppercase;
 }
@@ -69,14 +69,15 @@ main {
   flex-grow: 1;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
 
+/* Homepage Section */
 .intro-text {
   text-align: center;
   font-size: 18px;
-  color: var(--main-purple); /* Use the variable */
+  color: var(--main-purple);
   margin-bottom: 20px;
 }
 
@@ -96,6 +97,10 @@ main {
   animation: slide 12s linear infinite;
 }
 
+.animated-text a {
+  text-decoration: none;
+}
+
 .text {
   font-size: 24px;
   color: limegreen;
@@ -112,11 +117,37 @@ main {
   }
 }
 
+/* SPA Page Content */
+.page-content {
+  max-width: 800px;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  color: #ff9fff;
+  display: none;
+}
+
+.page-content.show {
+  display: block;
+}
+
+.page-content h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #ff9fff;
+}
+
+.page-content p {
+  font-size: 16px;
+  color: #e0a0ff;
+}
+
+/* Footer */
 footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-top: 1px solid var(--main-purple); /* Use the variable */
+  border-top: 1px solid var(--main-purple);
   padding: 10px 20px;
 }
 
@@ -125,7 +156,7 @@ footer {
 }
 
 .play-button {
-  background-color: var(--main-purple); /* Use the variable */
+  background-color: var(--main-purple);
   color: white;
   border: none;
   padding: 10px;
@@ -133,7 +164,7 @@ footer {
   cursor: pointer;
 }
 
-/* Media Queries for responsiveness */
+/* Responsive */
 @media (max-width: 768px) {
   .logo .eye {
     font-size: 20px;

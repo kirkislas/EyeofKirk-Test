@@ -18,44 +18,76 @@
           <div class="bar"></div>
         </div>
       </header>
+
       <nav id="menu">
         <ul>
-          <li><a href="#data-engineering">DATA ENGINEERING</a></li>
-          <li><a href="#data-visualization">DATA VISUALIZATION</a></li>
-          <li><a href="#full-stack-development">FULL STACK DEVELOPMENT</a></li>
-          <li><a href="#video-production">VIDEO PRODUCTION</a></li>
-          <li><a href="#photo-manipulation">PHOTO MANIPULATION</a></li>
-          <li><a href="#drone-operation">DRONE OPERATION</a></li>
+          <li><a href="/">HOME</a></li>
+          <li><a href="/data-engineering">DATA ENGINEERING</a></li>
+          <li><a href="/data-visualization">DATA VISUALIZATION</a></li>
+          <li><a href="/full-stack-development">FULL STACK DEVELOPMENT</a></li>
+          <li><a href="/video-production">VIDEO PRODUCTION</a></li>
+          <li><a href="/photo-manipulation">PHOTO MANIPULATION</a></li>
+          <li><a href="/drone-operation">DRONE OPERATION</a></li>
         </ul>
       </nav>
+
       <main>
-        <div class="intro-text">DIGITAL SOLUTIONS THROUGH</div>
-        <div class="animated-text-wrapper">
-          <div class="animated-text" id="animated-text">
-            <div class="text">DATA ENGINEERING</div>
-            <div class="text">DATA VISUALIZATION</div>
-            <div class="text">FULL STACK DEVELOPMENT</div>
-            <div class="text">VIDEO PRODUCTION</div>
-            <div class="text">PHOTO MANIPULATION</div>
-            <div class="text">DRONE OPERATION</div>
-            <!-- Duplicate the items for continuous loop -->
-            <div class="text">DATA ENGINEERING</div>
-            <div class="text">DATA VISUALIZATION</div>
-            <div class="text">FULL STACK DEVELOPMENT</div>
-            <div class="text">VIDEO PRODUCTION</div>
-            <div class="text">PHOTO MANIPULATION</div>
-            <div class="text">DRONE OPERATION</div>
+        <div id="home-section">
+          <div class="intro-text">DIGITAL SOLUTIONS THROUGH</div>
+          <div class="animated-text-wrapper">
+            <div class="animated-text" id="animated-text">
+              <a href="/data-engineering"
+                ><div class="text">DATA ENGINEERING</div></a
+              >
+              <a href="/data-visualization"
+                ><div class="text">DATA VISUALIZATION</div></a
+              >
+              <a href="/full-stack-development"
+                ><div class="text">FULL STACK DEVELOPMENT</div></a
+              >
+              <a href="/video-production"
+                ><div class="text">VIDEO PRODUCTION</div></a
+              >
+              <a href="/photo-manipulation"
+                ><div class="text">PHOTO MANIPULATION</div></a
+              >
+              <a href="/drone-operation"
+                ><div class="text">DRONE OPERATION</div></a
+              >
+              <a href="/data-engineering"
+                ><div class="text">DATA ENGINEERING</div></a
+              >
+              <a href="/data-visualization"
+                ><div class="text">DATA VISUALIZATION</div></a
+              >
+              <a href="/full-stack-development"
+                ><div class="text">FULL STACK DEVELOPMENT</div></a
+              >
+              <a href="/video-production"
+                ><div class="text">VIDEO PRODUCTION</div></a
+              >
+              <a href="/photo-manipulation"
+                ><div class="text">PHOTO MANIPULATION</div></a
+              >
+              <a href="/drone-operation"
+                ><div class="text">DRONE OPERATION</div></a
+              >
+            </div>
           </div>
         </div>
+
+        <div id="content" class="page-content"></div>
       </main>
+
       <footer>
         <div class="music-player">
-          <p>Now Playing - Kirk’s Random Playlist</p>
-          <p>JAY-Z & Kanye West - Gotta Have It (clean)</p>
+          <p>Now Playing - Playlist of Kirk</p>
+          <p>DadsGotSole - Kirk Mix</p>
           <button class="play-button" onclick="togglePlay()">🔊</button>
         </div>
       </footer>
     </div>
+
     <script src="script.js"></script>
   </body>
 </html>
