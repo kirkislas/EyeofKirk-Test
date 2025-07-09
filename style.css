@@ -149,6 +149,7 @@ footer {
   align-items: center;
   border-top: 1px solid var(--main-purple);
   padding: 10px 20px;
+  margin-bottom: env(safe-area-inset-bottom, 20px);
 }
 
 .music-player {
@@ -205,7 +206,7 @@ footer {
     height: 2px;
   }
   footer {
-    padding-bottom: 90px;
-    padding-bottom: calc(90px + env(safe-area-inset-bottom));
+    margin-bottom: 90px;
+    margin-bottom: calc(90px + env(safe-area-inset-bottom));
   }
 }
