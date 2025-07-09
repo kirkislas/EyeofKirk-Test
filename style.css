@@ -204,4 +204,7 @@ footer {
     width: 20px;
     height: 2px;
   }
+  footer {
+    padding-bottom: 30px;
+  }
 }
