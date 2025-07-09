@@ -52,7 +52,7 @@ header {
   top: 60px;
   left: 0;
   right: 0;
-  background-color: rgba(0, 255, 0, 0.1);
+  background-color: #00ff00; /* Solid green background */
   display: none;
   padding: 20px 0;
   text-align: center;
