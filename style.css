@@ -206,5 +206,6 @@ footer {
   }
   footer {
     padding-bottom: 90px;
+    padding-bottom: calc(90px + env(safe-area-inset-bottom));
   }
 }
