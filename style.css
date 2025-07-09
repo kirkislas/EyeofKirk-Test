@@ -4,12 +4,10 @@
 
 html,
 body {
-  overflow-x: hidden;
-  overscroll-behavior-y: none;
-}
-
-body {
+  height: 100%;
+  overflow: hidden;
   margin: 0;
+  padding: 0;
   font-family: "Arial", sans-serif;
   background-color: black;
   color: var(--main-purple);
@@ -18,7 +16,7 @@ body {
 .container {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  height: 100%;
   justify-content: space-between;
 }
 
@@ -77,9 +75,9 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
 
-/* Homepage Section */
 .intro-text {
   text-align: center;
   font-size: 18px;
@@ -123,7 +121,6 @@ main {
   }
 }
 
-/* SPA Page Content */
 .page-content {
   max-width: 800px;
   width: 100%;
@@ -148,14 +145,12 @@ main {
   color: #e0a0ff;
 }
 
-/* Footer */
 footer {
   display: flex;
   flex-direction: column;
   align-items: center;
   border-top: 1px solid var(--main-purple);
-  padding: 10px 20px;
-  padding-bottom: env(safe-area-inset-bottom, 20px);
+  padding: 10px 20px calc(20px + env(safe-area-inset-bottom));
 }
 
 .music-player {
@@ -171,7 +166,6 @@ footer {
   cursor: pointer;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
   .logo .eye {
     font-size: 20px;
@@ -211,6 +205,7 @@ footer {
     width: 20px;
     height: 2px;
   }
+
   footer {
     padding-bottom: calc(90px + env(safe-area-inset-bottom));
   }
