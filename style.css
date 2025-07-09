@@ -2,6 +2,12 @@
   --main-purple: #8408bd;
 }
 
+html,
+body {
+  overflow-x: hidden;
+  overscroll-behavior-y: none;
+}
+
 body {
   margin: 0;
   font-family: "Arial", sans-serif;
@@ -149,7 +155,7 @@ footer {
   align-items: center;
   border-top: 1px solid var(--main-purple);
   padding: 10px 20px;
-  margin-bottom: env(safe-area-inset-bottom, 20px);
+  padding-bottom: env(safe-area-inset-bottom, 20px);
 }
 
 .music-player {
@@ -206,7 +212,7 @@ footer {
     height: 2px;
   }
   footer {
-    margin-bottom: 90px;
-    margin-bottom: calc(90px + env(safe-area-inset-bottom));
+    padding-bottom: 90px;
+    padding-bottom: calc(90px + env(safe-area-inset-bottom));
   }
 }
