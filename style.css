@@ -48,24 +48,40 @@ header {
 }
 
 #menu {
+  position: absolute;
+  top: 60px;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 255, 0, 0.1);
   display: none;
+  padding: 20px 0;
+  text-align: center;
+  z-index: 1000;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+#menu.show {
+  display: block;
+  opacity: 1;
+  pointer-events: auto;
 }
 
 #menu ul {
   list-style: none;
   padding: 0;
   margin: 0;
-  text-align: center;
 }
 
 #menu ul li {
-  margin: 10px 0;
+  margin: 15px 0;
 }
 
 #menu ul li a {
   text-decoration: none;
   color: var(--main-purple);
-  font-size: 18px;
+  font-size: 20px;
 }
 
 main {
@@ -206,6 +222,6 @@ footer {
   }
 
   footer {
-    padding-bottom: calc(30px + env(safe-area-inset-bottom));
+    padding-bottom: calc(50px + env(safe-area-inset-bottom));
   }
 }
