@@ -16,7 +16,10 @@ const routes = {
 function navigate(path) {
   history.pushState({}, "", path);
   renderContent(path);
-  document.getElementById("menu").style.display = "none";
+
+  // ✅ Always hide the menu when navigating
+  const menu = document.getElementById("menu");
+  menu.classList.remove("show");
 }
 
 function renderContent(path) {
