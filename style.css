@@ -130,7 +130,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  animation: scrollText 12s linear infinite;
+  animation: slide 12s linear infinite;
 }
 
 .animated-text a {
@@ -144,7 +144,7 @@ main {
   margin: 5px 0;
 }
 
-@keyframes scrollText {
+@keyframes slide {
   0% {
     transform: translateY(0);
   }
