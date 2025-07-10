@@ -35,10 +35,7 @@ header {
 }
 
 .hamburger {
-  display: flex;
-  flex-direction: column;
-  cursor: pointer;
-  margin-right: 10px; /* Added to prevent X from touching edge */
+  display: none;
 }
 
 .hamburger .bar {
@@ -189,6 +186,34 @@ footer {
 
 /* Tablet styles */
 @media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    z-index: 1001;
+    padding: 10px;
+  }
+
+  .hamburger .bar {
+    width: 25px;
+    height: 3px;
+    background-color: var(--main-purple);
+    margin: 4px 0;
+    transition: all 0.3s ease;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+
   .logo .eye {
     font-size: 20px;
   }
