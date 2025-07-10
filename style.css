@@ -52,7 +52,7 @@ header {
   top: 60px;
   left: 0;
   right: 0;
-  background-color: #000000;
+  background-color: var(--main-purple);
   display: none;
   padding: 20px 0;
   text-align: center;
@@ -81,10 +81,12 @@ header {
 #menu ul li a {
   text-decoration: none;
   color: limegreen;
+  background-color: var(--main-purple);
   font-size: 20px;
   padding: 10px 15px;
   border-radius: 8px;
   display: inline-block;
+  text-transform: uppercase;
   font-weight: bold;
 }
 
@@ -226,6 +228,6 @@ footer {
   }
 
   footer {
-    padding-bottom: calc(50px + env(safe-area-inset-bottom));
+    padding-bottom: calc(30px + env(safe-area-inset-bottom));
   }
 }

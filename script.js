@@ -11,13 +11,16 @@ const routes = {
   "/photo-manipulation":
     "<h2>Photo Manipulation</h2><p>Editing magic and pixel precision.</p>",
   "/drone-operation": "<h2>Drone Operation</h2><p>Sky views from above.</p>",
+  "/about":
+    "<h2>About</h2><p>Learn more about Eye of Kirk and our mission.</p>",
+  "/contact":
+    "<h2>Contact</h2><p>Get in touch with us for collaborations or inquiries.</p>",
 };
 
 function navigate(path) {
   history.pushState({}, "", path);
   renderContent(path);
 
-  // ✅ Always hide the menu when navigating
   const menu = document.getElementById("menu");
   menu.classList.remove("show");
 }
@@ -26,7 +29,6 @@ function renderContent(path) {
   const homeSection = document.getElementById("home-section");
   const content = document.getElementById("content");
 
-  // Normalize /index.html to /
   if (path === "/index.html") {
     history.replaceState({}, "", "/");
     path = "/";
