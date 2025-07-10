@@ -194,14 +194,14 @@ footer {
     justify-content: center;
     cursor: pointer;
     z-index: 1001;
-    width: 50px; /* Increased width */
-    height: 50px; /* Increased height */
+    width: 48px; /* Increased width */
+    height: 48px; /* Increased height */
     padding: 10px;
     box-sizing: content-box; /* Prevent clipping */
   }
 
   .hamburger .bar {
-    width: 25px;
+    width: 28px;
     height: 3px;
     background-color: var(--main-purple);
     margin: 4px 0;
