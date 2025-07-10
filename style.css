@@ -28,6 +28,11 @@ header {
   border-bottom: 1px solid var(--main-purple);
 }
 
+.logo-link {
+  text-decoration: none;
+  color: limegreen;
+}
+
 .logo .eye {
   font-size: 24px;
   font-weight: bold;
