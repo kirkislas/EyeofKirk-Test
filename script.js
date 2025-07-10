@@ -61,6 +61,15 @@ window.addEventListener("popstate", () => {
 
 document.addEventListener("DOMContentLoaded", () => {
   renderContent(window.location.pathname);
+
+  // Play audio automatically on load
+  const audio = document.getElementById("backgroundAudio");
+  if (audio) {
+    audio.play().catch(() => {
+      // Some browsers require interaction before autoplay
+      console.log("Autoplay prevented, waiting for user interaction.");
+    });
+  }
 });
 
 function toggleMenu() {
@@ -72,10 +81,15 @@ function toggleMenu() {
 
 function togglePlay() {
   const button = document.getElementById("speakerButton");
+  const audio = document.getElementById("backgroundAudio");
 
-  if (button.textContent === "🔊") {
-    button.textContent = "🔇"; // Muted icon
-  } else {
+  if (!audio) return;
+
+  if (audio.muted) {
+    audio.muted = false;
     button.textContent = "🔊"; // Speaker icon
+  } else {
+    audio.muted = true;
+    button.textContent = "🔇"; // Muted icon
   }
 }
