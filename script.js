@@ -71,5 +71,11 @@ function toggleMenu() {
 }
 
 function togglePlay() {
-  alert("Now playing your track! 🔊");
+  const button = document.getElementById("speakerButton");
+
+  if (button.textContent === "🔊") {
+    button.textContent = "🔇"; // Muted icon
+  } else {
+    button.textContent = "🔊"; // Speaker icon
+  }
 }
