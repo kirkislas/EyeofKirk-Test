@@ -103,7 +103,7 @@ main {
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  padding-top: 140px;
+  padding-top: 110px;
   padding-bottom: 20px;
   text-align: center;
 }
@@ -124,6 +124,7 @@ main {
   min-height: 150px;
   position: relative;
   overflow: hidden;
+  transform: translateY(30px);
 }
 
 .animated-text {
@@ -149,7 +150,7 @@ main {
     transform: translateY(0);
   }
   100% {
-    transform: translateY(-50%);
+    transform: translateY(-33.33%);
   }
 }
 
