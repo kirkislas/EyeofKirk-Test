@@ -105,10 +105,14 @@ main {
   text-align: center;
   color: #ff9fff;
   display: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 .page-content.show {
-  display: block;
+  display: flex;
 }
 
 .page-content h2 {
