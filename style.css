@@ -190,13 +190,14 @@ footer {
   .hamburger {
     display: flex;
     flex-direction: column;
-    cursor: pointer;
-    z-index: 1001;
-    padding: 10px;
-    width: 44px;
-    height: 44px;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
+    z-index: 1001;
+    width: 50px; /* Increased width */
+    height: 50px; /* Increased height */
+    padding: 10px;
+    box-sizing: content-box; /* Prevent clipping */
   }
 
   .hamburger .bar {
@@ -208,7 +209,7 @@ footer {
   }
 
   .hamburger.active .bar:nth-child(1) {
-    transform: rotate(45deg) translate(4px, 4px);
+    transform: rotate(45deg) translate(3px, 3px); /* Smaller shift */
   }
 
   .hamburger.active .bar:nth-child(2) {
@@ -216,7 +217,7 @@ footer {
   }
 
   .hamburger.active .bar:nth-child(3) {
-    transform: rotate(-45deg) translate(4px, -4px);
+    transform: rotate(-45deg) translate(3px, -3px); /* Smaller shift */
   }
 
   .logo .eye {
