@@ -209,7 +209,7 @@ footer {
   }
 
   .hamburger.active .bar:nth-child(1) {
-    transform: rotate(45deg) translate(4px, 3px);
+    transform: rotate(45deg) translate(3px, 3px);
   }
 
   .hamburger.active .bar:nth-child(2) {
@@ -217,7 +217,7 @@ footer {
   }
 
   .hamburger.active .bar:nth-child(3) {
-    transform: rotate(-45deg) translate(-4px, 5px);
+    transform: rotate(-45deg) translate(3px, -3px);
   }
 
   .logo .eye {
