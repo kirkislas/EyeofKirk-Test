@@ -22,7 +22,9 @@ function navigate(path) {
   renderContent(path);
 
   const menu = document.getElementById("menu");
+  const hamburger = document.querySelector(".hamburger");
   menu.classList.remove("show");
+  hamburger.classList.remove("active");
 }
 
 function renderContent(path) {
@@ -63,7 +65,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
 function toggleMenu() {
   const menu = document.getElementById("menu");
+  const hamburger = document.querySelector(".hamburger");
   menu.classList.toggle("show");
+  hamburger.classList.toggle("active");
 }
 
 function togglePlay() {
