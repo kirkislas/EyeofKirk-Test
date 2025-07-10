@@ -34,17 +34,11 @@ header {
   color: limegreen;
 }
 
-/* Hamburger button */
 .hamburger {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   cursor: pointer;
-  width: 30px;
-  height: 30px;
-  position: relative;
-  z-index: 1100;
+  margin-right: 10px; /* Added to prevent X from touching edge */
 }
 
 .hamburger .bar {
@@ -52,24 +46,8 @@ header {
   height: 3px;
   background-color: var(--main-purple);
   margin: 4px 0;
-  border-radius: 2px;
-  transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
-/* Active state: Purple X */
-.hamburger.active .bar:nth-child(1) {
-  transform: rotate(45deg) translate(5px, 5px);
-}
-
-.hamburger.active .bar:nth-child(2) {
-  opacity: 0;
-}
-
-.hamburger.active .bar:nth-child(3) {
-  transform: rotate(-45deg) translate(5px, -5px);
-}
-
-/* Navbar */
 #menu {
   position: absolute;
   top: 60px;
@@ -112,7 +90,6 @@ header {
   font-weight: bold;
 }
 
-/* Main content */
 main {
   flex-grow: 1;
   display: flex;
@@ -133,7 +110,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 120px; /* Controls visible animation box height */
+  height: 120px; /* controls visible window for animation */
   overflow: hidden;
   position: relative;
 }
@@ -165,7 +142,6 @@ main {
   }
 }
 
-/* Page content section */
 .page-content {
   max-width: 800px;
   width: 100%;
@@ -190,7 +166,6 @@ main {
   color: #e0a0ff;
 }
 
-/* Footer */
 footer {
   display: flex;
   flex-direction: column;
@@ -212,7 +187,7 @@ footer {
   cursor: pointer;
 }
 
-/* Tablet adjustments */
+/* Tablet styles */
 @media (max-width: 768px) {
   .logo .eye {
     font-size: 20px;
@@ -231,7 +206,7 @@ footer {
   }
 }
 
-/* Mobile adjustments */
+/* Mobile styles */
 @media (max-width: 480px) {
   .logo .eye {
     font-size: 18px;
@@ -255,8 +230,6 @@ footer {
   }
 
   footer {
-    padding-bottom: calc(
-      25px + env(safe-area-inset-bottom)
-    ); /* Lower mobile footer */
+    padding-bottom: calc(20px + env(safe-area-inset-bottom));
   }
 }
