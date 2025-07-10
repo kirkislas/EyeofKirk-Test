@@ -81,7 +81,6 @@ header {
 #menu ul li a {
   text-decoration: none;
   color: limegreen;
-  background-color: var(--main-purple);
   font-size: 20px;
   padding: 10px 15px;
   border-radius: 8px;
