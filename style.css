@@ -103,7 +103,7 @@ main {
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  padding-top: 80px; /* Increased for better centering */
+  padding-top: 100px;
   padding-bottom: 20px;
   text-align: center;
 }
@@ -124,7 +124,7 @@ main {
   min-height: 150px;
   position: relative;
   overflow: hidden;
-  transform: translateY(20px); /* Fine-tune adjustment */
+  transform: translateY(30px);
 }
 
 .animated-text {
@@ -150,7 +150,7 @@ main {
     transform: translateY(0);
   }
   100% {
-    transform: translateY(-50%);
+    transform: translateY(-100%);
   }
 }
 
