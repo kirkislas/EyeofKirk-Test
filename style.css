@@ -103,7 +103,7 @@ main {
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  padding-top: 100px;
+  padding-top: 110px;
   padding-bottom: 20px;
   text-align: center;
 }
@@ -150,7 +150,7 @@ main {
     transform: translateY(0);
   }
   100% {
-    transform: translateY(-100%);
+    transform: translateY(-50%);
   }
 }
 
