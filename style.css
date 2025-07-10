@@ -191,7 +191,10 @@ footer {
     flex-direction: column;
     cursor: pointer;
     z-index: 1001;
-    padding: 10px;
+    padding: 12px;
+    margin-right: 10px;
+    min-width: 40px;
+    min-height: 40px;
   }
 
   .hamburger .bar {
