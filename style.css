@@ -104,6 +104,9 @@ main {
   justify-content: center;
   overflow: hidden;
   min-height: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
 }
 
 .intro-text {
@@ -117,11 +120,12 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 150px;
-  overflow: hidden;
+  flex-grow: 1;
+  justify-content: center;
+  min-height: 150px;
   position: relative;
+  overflow: hidden;
 }
-
 .animated-text {
   display: flex;
   flex-direction: column;
