@@ -62,13 +62,12 @@ window.addEventListener("popstate", () => {
 document.addEventListener("DOMContentLoaded", () => {
   renderContent(window.location.pathname);
 
-  // Play audio automatically on load
   const audio = document.getElementById("backgroundAudio");
-  if (audio) {
-    audio.play().catch(() => {
-      // Some browsers require interaction before autoplay
-      console.log("Autoplay prevented, waiting for user interaction.");
-    });
+  const button = document.getElementById("speakerButton");
+
+  if (audio && button) {
+    audio.muted = true; // Start muted
+    button.textContent = "🔇"; // Set default icon
   }
 });
 
@@ -83,13 +82,16 @@ function togglePlay() {
   const button = document.getElementById("speakerButton");
   const audio = document.getElementById("backgroundAudio");
 
-  if (!audio) return;
+  if (!audio || !button) return;
 
-  if (audio.muted) {
+  if (audio.muted || audio.paused) {
     audio.muted = false;
-    button.textContent = "🔊"; // Speaker icon
+    audio.play().catch(() => {
+      console.log("Audio playback blocked until user interacts.");
+    });
+    button.textContent = "🔊";
   } else {
     audio.muted = true;
-    button.textContent = "🔇"; // Muted icon
+    button.textContent = "🔇";
   }
 }
