@@ -103,8 +103,7 @@ main {
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  min-height: 0;
-  padding-top: 20px;
+  padding-top: 80px; /* Increased for better centering */
   padding-bottom: 20px;
   text-align: center;
 }
@@ -125,7 +124,9 @@ main {
   min-height: 150px;
   position: relative;
   overflow: hidden;
+  transform: translateY(20px); /* Fine-tune adjustment */
 }
+
 .animated-text {
   display: flex;
   flex-direction: column;
