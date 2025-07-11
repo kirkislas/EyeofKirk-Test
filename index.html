@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Eye of Kirk</title>
     <link rel="stylesheet" href="style.css" />
+    <!-- Font Awesome for speaker icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-p1CmS6iFIMt5aOg6aQzX0sk+Ki9B+H5vVkcculxfrIBm+E2rfI40nJdL5pZ+GaxzKq9PfkjG2mQ/2Pi3aa/h7g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <div class="container">
@@ -60,7 +68,7 @@
                 ><div class="text">DRONE OPERATION</div></a
               >
 
-              <!-- Set 2 (for seamless infinite loop) -->
+              <!-- Set 2 -->
               <a href="/data-engineering"
                 ><div class="text">DATA ENGINEERING</div></a
               >
@@ -92,10 +100,10 @@
           <p>DadsGotSole - Casa Frida Mix</p>
 
           <button id="speakerButton" class="play-button" onclick="togglePlay()">
-            🔇
+            <i class="fa-solid fa-volume-xmark"></i>
           </button>
 
-          <audio id="backgroundAudio" autoplay loop>
+          <audio id="backgroundAudio" autoplay loop muted>
             <source src="media/CasaFRIDAVibeMix.mp3" type="audio/mp3" />
             Your browser does not support the audio element.
           </audio>

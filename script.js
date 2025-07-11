@@ -63,11 +63,11 @@ document.addEventListener("DOMContentLoaded", () => {
   renderContent(window.location.pathname);
 
   const audio = document.getElementById("backgroundAudio");
-  const button = document.getElementById("speakerButton");
+  const buttonIcon = document.querySelector("#speakerButton i");
 
-  if (audio && button) {
+  if (audio && buttonIcon) {
     audio.muted = true; // Start muted
-    button.textContent = "🔇"; // Set default icon
+    buttonIcon.className = "fa-solid fa-volume-xmark"; // Mute icon as default
   }
 });
 
@@ -79,19 +79,19 @@ function toggleMenu() {
 }
 
 function togglePlay() {
-  const button = document.getElementById("speakerButton");
+  const buttonIcon = document.querySelector("#speakerButton i");
   const audio = document.getElementById("backgroundAudio");
 
-  if (!audio || !button) return;
+  if (!audio || !buttonIcon) return;
 
   if (audio.muted || audio.paused) {
     audio.muted = false;
     audio.play().catch(() => {
       console.log("Audio playback blocked until user interacts.");
     });
-    button.textContent = "🔊";
+    buttonIcon.className = "fa-solid fa-volume-high";
   } else {
     audio.muted = true;
-    button.textContent = "🔇";
+    buttonIcon.className = "fa-solid fa-volume-xmark";
   }
 }
