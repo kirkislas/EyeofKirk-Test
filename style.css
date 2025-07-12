@@ -190,6 +190,11 @@ footer {
   cursor: pointer;
 }
 
+.play-button i {
+  color: white;
+  font-size: 18px;
+}
+
 /* Tablet styles */
 @media (max-width: 768px) {
   .hamburger {
